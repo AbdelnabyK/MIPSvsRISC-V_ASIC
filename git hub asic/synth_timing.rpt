@@ -1,0 +1,968 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : riscv_core
+Version: G-2012.06-SP2
+Date   : Wed Jan 31 13:00:48 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: genblk1_u_muldiv/mul_operand_a_q_reg_14_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/result_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/Q (DFF_X1)     0.09       0.09 f
+  genblk1_u_muldiv/U3041/ZN (AOI22_X1)                    0.07       0.17 r
+  genblk1_u_muldiv/U494/ZN (AND2_X2)                      0.09       0.26 r
+  genblk1_u_muldiv/U848/ZN (INV_X1)                       0.09       0.35 f
+  genblk1_u_muldiv/U828/ZN (OR2_X1)                       0.07       0.43 f
+  genblk1_u_muldiv/U916/ZN (NAND3_X1)                     0.03       0.46 r
+  genblk1_u_muldiv/U1942/ZN (NAND2_X1)                    0.04       0.50 f
+  genblk1_u_muldiv/U786/ZN (NAND2_X1)                     0.04       0.54 r
+  genblk1_u_muldiv/U778/ZN (NOR2_X1)                      0.03       0.57 f
+  genblk1_u_muldiv/U230/ZN (AOI21_X1)                     0.04       0.61 r
+  genblk1_u_muldiv/U232/ZN (AOI21_X1)                     0.04       0.65 f
+  genblk1_u_muldiv/U1066/ZN (NAND2_X1)                    0.03       0.68 r
+  genblk1_u_muldiv/U1065/ZN (NAND2_X1)                    0.03       0.71 f
+  genblk1_u_muldiv/U1064/ZN (INV_X1)                      0.03       0.74 r
+  genblk1_u_muldiv/U909/ZN (OAI21_X1)                     0.03       0.77 f
+  genblk1_u_muldiv/U906/ZN (INV_X1)                       0.03       0.80 r
+  genblk1_u_muldiv/U725/ZN (OAI21_X1)                     0.03       0.83 f
+  genblk1_u_muldiv/U889/ZN (INV_X1)                       0.03       0.86 r
+  genblk1_u_muldiv/U886/ZN (OAI21_X1)                     0.03       0.88 f
+  genblk1_u_muldiv/intadd_6/U15/CO (FA_X1)                0.08       0.96 f
+  genblk1_u_muldiv/intadd_6/U14/CO (FA_X1)                0.08       1.05 f
+  genblk1_u_muldiv/intadd_6/U13/CO (FA_X1)                0.08       1.13 f
+  genblk1_u_muldiv/intadd_6/U12/CO (FA_X1)                0.08       1.21 f
+  genblk1_u_muldiv/intadd_6/U11/CO (FA_X1)                0.08       1.29 f
+  genblk1_u_muldiv/intadd_6/U10/CO (FA_X1)                0.08       1.37 f
+  genblk1_u_muldiv/intadd_6/U9/CO (FA_X1)                 0.08       1.45 f
+  genblk1_u_muldiv/intadd_6/U8/CO (FA_X1)                 0.08       1.54 f
+  genblk1_u_muldiv/U296/Z (XOR2_X1)                       0.07       1.60 f
+  genblk1_u_muldiv/U297/ZN (XNOR2_X1)                     0.06       1.66 r
+  genblk1_u_muldiv/U1153/ZN (XNOR2_X1)                    0.06       1.73 r
+  genblk1_u_muldiv/U1122/ZN (XNOR2_X1)                    0.06       1.79 r
+  genblk1_u_muldiv/U598/ZN (OR2_X1)                       0.05       1.84 r
+  genblk1_u_muldiv/U969/ZN (NOR2_X1)                      0.03       1.86 f
+  genblk1_u_muldiv/U970/ZN (AOI21_X1)                     0.04       1.90 r
+  genblk1_u_muldiv/U1168/ZN (INV_X1)                      0.03       1.93 f
+  genblk1_u_muldiv/U1166/ZN (AOI22_X1)                    0.05       1.98 r
+  genblk1_u_muldiv/U1165/ZN (NAND2_X1)                    0.03       2.01 f
+  genblk1_u_muldiv/intadd_2/U7/S (FA_X1)                  0.12       2.13 r
+  genblk1_u_muldiv/U2739/ZN (INV_X1)                      0.03       2.15 f
+  genblk1_u_muldiv/U1188/ZN (NOR2_X1)                     0.03       2.19 r
+  genblk1_u_muldiv/U1186/ZN (OAI21_X1)                    0.03       2.22 f
+  genblk1_u_muldiv/intadd_3/U3/S (FA_X1)                  0.10       2.32 f
+  genblk1_u_muldiv/U2455/ZN (NOR2_X1)                     0.04       2.36 r
+  genblk1_u_muldiv/U2456/ZN (OAI21_X1)                    0.03       2.39 f
+  genblk1_u_muldiv/intadd_3/U2/CO (FA_X1)                 0.08       2.47 f
+  genblk1_u_muldiv/U983/ZN (OAI21_X1)                     0.04       2.51 r
+  genblk1_u_muldiv/U982/ZN (INV_X1)                       0.03       2.54 f
+  genblk1_u_muldiv/U987/ZN (OAI21_X1)                     0.04       2.58 r
+  genblk1_u_muldiv/intadd_2/U2/CO (FA_X1)                 0.07       2.65 r
+  genblk1_u_muldiv/U2479/ZN (OAI21_X1)                    0.04       2.69 f
+  genblk1_u_muldiv/U963/ZN (NAND2_X1)                     0.03       2.72 r
+  genblk1_u_muldiv/U961/ZN (NAND2_X1)                     0.04       2.76 f
+  genblk1_u_muldiv/U960/ZN (NAND2_X1)                     0.04       2.79 r
+  genblk1_u_muldiv/U1110/ZN (NAND2_X1)                    0.03       2.82 f
+  genblk1_u_muldiv/U1109/ZN (NAND2_X1)                    0.03       2.85 r
+  genblk1_u_muldiv/U372/ZN (NAND3_X1)                     0.04       2.89 f
+  genblk1_u_muldiv/U1239/ZN (NAND2_X1)                    0.03       2.92 r
+  genblk1_u_muldiv/U1240/ZN (NAND3_X1)                    0.04       2.96 f
+  genblk1_u_muldiv/U1009/ZN (NAND2_X1)                    0.03       3.00 r
+  genblk1_u_muldiv/U1007/ZN (NAND2_X1)                    0.03       3.03 f
+  genblk1_u_muldiv/U1006/ZN (NAND2_X1)                    0.03       3.05 r
+  genblk1_u_muldiv/U1048/ZN (NAND2_X1)                    0.03       3.08 f
+  genblk1_u_muldiv/U1047/ZN (NAND2_X1)                    0.03       3.11 r
+  genblk1_u_muldiv/U1062/ZN (NAND2_X1)                    0.03       3.14 f
+  genblk1_u_muldiv/U1061/ZN (NAND2_X1)                    0.03       3.17 r
+  genblk1_u_muldiv/U1068/ZN (NAND2_X1)                    0.03       3.20 f
+  genblk1_u_muldiv/U356/ZN (NAND2_X1)                     0.03       3.23 r
+  genblk1_u_muldiv/U357/ZN (AND2_X1)                      0.04       3.27 r
+  genblk1_u_muldiv/U1237/ZN (NAND2_X1)                    0.03       3.30 f
+  genblk1_u_muldiv/U335/ZN (OAI21_X1)                     0.03       3.33 r
+  genblk1_u_muldiv/U336/ZN (OAI21_X1)                     0.04       3.37 f
+  genblk1_u_muldiv/U996/ZN (NAND2_X1)                     0.03       3.40 r
+  genblk1_u_muldiv/U1002/ZN (NAND2_X1)                    0.04       3.44 f
+  genblk1_u_muldiv/U1001/ZN (XNOR2_X1)                    0.07       3.51 f
+  genblk1_u_muldiv/U1108/ZN (OR2_X1)                      0.05       3.56 f
+  genblk1_u_muldiv/U953/ZN (NAND3_X1)                     0.03       3.58 r
+  genblk1_u_muldiv/U952/ZN (OAI21_X1)                     0.03       3.61 f
+  genblk1_u_muldiv/result_q_reg_31_/D (DFF_X1)            0.01       3.62 f
+  data arrival time                                                  3.62
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/result_q_reg_31_/CK (DFF_X1)           0.00       3.65 r
+  library setup time                                     -0.03       3.62
+  data required time                                                 3.62
+  --------------------------------------------------------------------------
+  data required time                                                 3.62
+  data arrival time                                                 -3.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: mem_i_inst_i[17]
+              (input port clocked by clk_i)
+  Endpoint: pc_q_reg_30_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_i (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.08       0.08 r
+  mem_i_inst_i[17] (in)                    0.00       0.08 r
+  U8361/ZN (INV_X1)                        0.04       0.12 f
+  U8353/ZN (NOR2_X1)                       0.09       0.21 r
+  U8170/Z (BUF_X1)                         0.15       0.36 r
+  U6939/ZN (AOI22_X1)                      0.08       0.44 f
+  U6952/ZN (NAND4_X1)                      0.04       0.48 r
+  U8727/ZN (AOI22_X1)                      0.03       0.51 f
+  U8728/ZN (NAND2_X1)                      0.07       0.58 r
+  U8890/ZN (INV_X1)                        0.05       0.63 f
+  U8891/ZN (AOI22_X1)                      0.05       0.68 r
+  U8892/ZN (OAI21_X1)                      0.04       0.72 f
+  U8893/ZN (AOI21_X1)                      0.07       0.79 r
+  U8900/ZN (NAND4_X1)                      0.05       0.84 f
+  U8901/ZN (NOR4_X1)                       0.08       0.92 r
+  U8902/ZN (NAND4_X1)                      0.06       0.99 f
+  U8935/ZN (NAND2_X1)                      0.04       1.03 r
+  U8936/ZN (OAI211_X1)                     0.04       1.07 f
+  U8957/ZN (OAI211_X1)                     0.04       1.11 r
+  U8958/ZN (NOR2_X1)                       0.04       1.15 f
+  U8959/ZN (INV_X1)                        0.04       1.19 r
+  U8391/ZN (OAI21_X1)                      0.04       1.23 f
+  U8390/ZN (OAI21_X1)                      0.04       1.27 r
+  U8388/ZN (NAND2_X1)                      0.03       1.30 f
+  DP_OP_181J1_124_5161_U31/CO (FA_X1)      0.08       1.38 f
+  DP_OP_181J1_124_5161_U30/CO (FA_X1)      0.08       1.47 f
+  DP_OP_181J1_124_5161_U29/CO (FA_X1)      0.08       1.55 f
+  DP_OP_181J1_124_5161_U28/CO (FA_X1)      0.08       1.63 f
+  DP_OP_181J1_124_5161_U27/CO (FA_X1)      0.08       1.71 f
+  DP_OP_181J1_124_5161_U26/CO (FA_X1)      0.08       1.79 f
+  U8249/ZN (AOI21_X1)                      0.05       1.84 r
+  U8379/ZN (OAI21_X1)                      0.04       1.88 f
+  DP_OP_181J1_124_5161_U23/CO (FA_X1)      0.08       1.96 f
+  DP_OP_181J1_124_5161_U22/CO (FA_X1)      0.08       2.05 f
+  U8377/ZN (AOI22_X1)                      0.04       2.09 r
+  U8376/ZN (INV_X1)                        0.03       2.11 f
+  DP_OP_181J1_124_5161_U20/CO (FA_X1)      0.08       2.19 f
+  DP_OP_181J1_124_5161_U19/CO (FA_X1)      0.08       2.27 f
+  DP_OP_181J1_124_5161_U18/CO (FA_X1)      0.08       2.36 f
+  DP_OP_181J1_124_5161_U17/CO (FA_X1)      0.08       2.44 f
+  DP_OP_181J1_124_5161_U16/CO (FA_X1)      0.08       2.52 f
+  DP_OP_181J1_124_5161_U15/CO (FA_X1)      0.08       2.60 f
+  DP_OP_181J1_124_5161_U14/CO (FA_X1)      0.08       2.68 f
+  DP_OP_181J1_124_5161_U13/CO (FA_X1)      0.08       2.76 f
+  DP_OP_181J1_124_5161_U12/CO (FA_X1)      0.08       2.85 f
+  U8244/ZN (AOI21_X1)                      0.05       2.90 r
+  U8242/ZN (OAI21_X1)                      0.04       2.93 f
+  DP_OP_181J1_124_5161_U9/CO (FA_X1)       0.08       3.01 f
+  DP_OP_181J1_124_5161_U8/CO (FA_X1)       0.08       3.10 f
+  DP_OP_181J1_124_5161_U7/CO (FA_X1)       0.08       3.18 f
+  DP_OP_181J1_124_5161_U6/CO (FA_X1)       0.08       3.26 f
+  DP_OP_181J1_124_5161_U5/CO (FA_X1)       0.08       3.34 f
+  DP_OP_181J1_124_5161_U4/CO (FA_X1)       0.08       3.42 f
+  DP_OP_181J1_124_5161_U3/S (FA_X1)        0.11       3.54 r
+  U11319/ZN (AOI22_X1)                     0.03       3.57 f
+  U11320/ZN (OAI211_X1)                    0.04       3.61 r
+  pc_q_reg_30_/D (DFF_X1)                  0.01       3.61 r
+  data arrival time                                   3.61
+
+  clock clk_i (rise edge)                  4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.35       3.65
+  pc_q_reg_30_/CK (DFF_X1)                 0.00       3.65 r
+  library setup time                      -0.03       3.62
+  data required time                                  3.62
+  -----------------------------------------------------------
+  data required time                                  3.62
+  data arrival time                                  -3.61
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: mem_i_inst_i[15]
+              (input port clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/dividend_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.08       0.08 r
+  mem_i_inst_i[15] (in)                                   0.00       0.08 r
+  U8362/ZN (INV_X1)                                       0.04       0.12 f
+  U6511/ZN (NOR3_X1)                                      0.13       0.25 r
+  U8349/Z (BUF_X1)                                        0.10       0.35 r
+  U6529/ZN (AOI22_X1)                                     0.05       0.40 f
+  U6535/ZN (NAND4_X1)                                     0.04       0.44 r
+  U8774/ZN (AOI22_X1)                                     0.03       0.47 f
+  U8301/ZN (NAND2_X1)                                     0.05       0.52 r
+  U8299/ZN (INV_X1)                                       0.05       0.57 f
+  U8297/ZN (NOR2_X1)                                      0.06       0.63 r
+  U8153/ZN (AOI21_X1)                                     0.05       0.68 f
+  U8393/ZN (NOR2_X1)                                      0.05       0.73 r
+  U8291/ZN (AOI211_X1)                                    0.04       0.78 f
+  u_csr/excpn_lsu_align_i (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.78 f
+  u_csr/U73/ZN (OAI21_X1)                                 0.07       0.84 r
+  u_csr/exception_o_BAR (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.84 r
+  U8290/ZN (INV_X1)                                       0.04       0.88 f
+  U8284/ZN (NOR2_X1)                                      0.05       0.93 r
+  genblk1_u_muldiv/valid_i (uriscv_muldiv)                0.00       0.93 r
+  genblk1_u_muldiv/U742/ZN (NAND2_X1)                     0.05       0.98 f
+  genblk1_u_muldiv/U734/ZN (NOR2_X1)                      0.05       1.03 r
+  genblk1_u_muldiv/U2841/ZN (NAND3_X1)                    0.05       1.08 f
+  genblk1_u_muldiv/U721/ZN (INV_X1)                       0.04       1.12 r
+  genblk1_u_muldiv/U707/Z (BUF_X1)                        0.08       1.20 r
+  genblk1_u_muldiv/U3908/ZN (AOI22_X1)                    0.07       1.26 f
+  genblk1_u_muldiv/U1056/ZN (OAI21_X1)                    0.04       1.31 r
+  genblk1_u_muldiv/U1054/ZN (NAND2_X1)                    0.03       1.34 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U30/CO (FA_X1)      0.08       1.42 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U29/CO (FA_X1)      0.08       1.50 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U28/CO (FA_X1)      0.08       1.58 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U27/CO (FA_X1)      0.08       1.66 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U26/CO (FA_X1)      0.08       1.74 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U25/CO (FA_X1)      0.08       1.83 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U24/CO (FA_X1)      0.08       1.91 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U23/CO (FA_X1)      0.08       1.99 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U22/CO (FA_X1)      0.08       2.07 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U21/CO (FA_X1)      0.08       2.15 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U20/CO (FA_X1)      0.08       2.23 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U19/CO (FA_X1)      0.08       2.32 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U18/CO (FA_X1)      0.08       2.40 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U17/CO (FA_X1)      0.08       2.48 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U16/CO (FA_X1)      0.08       2.56 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U15/CO (FA_X1)      0.08       2.64 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U14/CO (FA_X1)      0.08       2.72 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U13/CO (FA_X1)      0.08       2.80 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U12/CO (FA_X1)      0.08       2.89 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U11/CO (FA_X1)      0.08       2.97 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U10/CO (FA_X1)      0.08       3.05 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U9/CO (FA_X1)       0.08       3.13 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U8/CO (FA_X1)       0.08       3.21 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U7/CO (FA_X1)       0.08       3.30 f
+  genblk1_u_muldiv/U537/ZN (AOI21_X1)                     0.05       3.34 r
+  genblk1_u_muldiv/U530/ZN (OAI21_X1)                     0.04       3.38 f
+  genblk1_u_muldiv/U959/ZN (INV_X1)                       0.03       3.41 r
+  genblk1_u_muldiv/U956/ZN (OAI21_X1)                     0.03       3.44 f
+  genblk1_u_muldiv/U955/ZN (AOI21_X1)                     0.04       3.48 r
+  genblk1_u_muldiv/U993/ZN (INV_X1)                       0.02       3.51 f
+  genblk1_u_muldiv/U1000/ZN (XNOR2_X1)                    0.05       3.56 f
+  genblk1_u_muldiv/U3719/ZN (OAI222_X1)                   0.04       3.60 r
+  genblk1_u_muldiv/dividend_q_reg_31_/D (DFF_X1)          0.01       3.61 r
+  data arrival time                                                  3.61
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/dividend_q_reg_31_/CK (DFF_X1)         0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: genblk1_u_muldiv/mul_operand_a_q_reg_14_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/result_q_reg_30_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/Q (DFF_X1)     0.09       0.09 f
+  genblk1_u_muldiv/U3041/ZN (AOI22_X1)                    0.07       0.17 r
+  genblk1_u_muldiv/U494/ZN (AND2_X2)                      0.09       0.26 r
+  genblk1_u_muldiv/U848/ZN (INV_X1)                       0.09       0.35 f
+  genblk1_u_muldiv/U828/ZN (OR2_X1)                       0.07       0.43 f
+  genblk1_u_muldiv/U916/ZN (NAND3_X1)                     0.03       0.46 r
+  genblk1_u_muldiv/U1942/ZN (NAND2_X1)                    0.04       0.50 f
+  genblk1_u_muldiv/U786/ZN (NAND2_X1)                     0.04       0.54 r
+  genblk1_u_muldiv/U778/ZN (NOR2_X1)                      0.03       0.57 f
+  genblk1_u_muldiv/U230/ZN (AOI21_X1)                     0.04       0.61 r
+  genblk1_u_muldiv/U232/ZN (AOI21_X1)                     0.04       0.65 f
+  genblk1_u_muldiv/U1066/ZN (NAND2_X1)                    0.03       0.68 r
+  genblk1_u_muldiv/U1065/ZN (NAND2_X1)                    0.03       0.71 f
+  genblk1_u_muldiv/U1064/ZN (INV_X1)                      0.03       0.74 r
+  genblk1_u_muldiv/U909/ZN (OAI21_X1)                     0.03       0.77 f
+  genblk1_u_muldiv/U906/ZN (INV_X1)                       0.03       0.80 r
+  genblk1_u_muldiv/U725/ZN (OAI21_X1)                     0.03       0.83 f
+  genblk1_u_muldiv/U889/ZN (INV_X1)                       0.03       0.86 r
+  genblk1_u_muldiv/U886/ZN (OAI21_X1)                     0.03       0.88 f
+  genblk1_u_muldiv/intadd_6/U15/CO (FA_X1)                0.08       0.96 f
+  genblk1_u_muldiv/intadd_6/U14/CO (FA_X1)                0.08       1.05 f
+  genblk1_u_muldiv/intadd_6/U13/CO (FA_X1)                0.08       1.13 f
+  genblk1_u_muldiv/intadd_6/U12/CO (FA_X1)                0.08       1.21 f
+  genblk1_u_muldiv/intadd_6/U11/CO (FA_X1)                0.08       1.29 f
+  genblk1_u_muldiv/intadd_6/U10/CO (FA_X1)                0.08       1.37 f
+  genblk1_u_muldiv/intadd_6/U9/CO (FA_X1)                 0.08       1.45 f
+  genblk1_u_muldiv/intadd_6/U8/CO (FA_X1)                 0.08       1.54 f
+  genblk1_u_muldiv/U296/Z (XOR2_X1)                       0.07       1.60 f
+  genblk1_u_muldiv/U297/ZN (XNOR2_X1)                     0.06       1.66 r
+  genblk1_u_muldiv/U1153/ZN (XNOR2_X1)                    0.06       1.73 r
+  genblk1_u_muldiv/U1122/ZN (XNOR2_X1)                    0.06       1.79 r
+  genblk1_u_muldiv/U598/ZN (OR2_X1)                       0.05       1.84 r
+  genblk1_u_muldiv/U969/ZN (NOR2_X1)                      0.03       1.86 f
+  genblk1_u_muldiv/U970/ZN (AOI21_X1)                     0.04       1.90 r
+  genblk1_u_muldiv/U1168/ZN (INV_X1)                      0.03       1.93 f
+  genblk1_u_muldiv/U1166/ZN (AOI22_X1)                    0.05       1.98 r
+  genblk1_u_muldiv/U1165/ZN (NAND2_X1)                    0.03       2.01 f
+  genblk1_u_muldiv/intadd_2/U7/S (FA_X1)                  0.12       2.13 r
+  genblk1_u_muldiv/U2739/ZN (INV_X1)                      0.03       2.15 f
+  genblk1_u_muldiv/U1188/ZN (NOR2_X1)                     0.03       2.19 r
+  genblk1_u_muldiv/U1186/ZN (OAI21_X1)                    0.03       2.22 f
+  genblk1_u_muldiv/intadd_3/U3/S (FA_X1)                  0.10       2.32 f
+  genblk1_u_muldiv/U2455/ZN (NOR2_X1)                     0.04       2.36 r
+  genblk1_u_muldiv/U2456/ZN (OAI21_X1)                    0.03       2.39 f
+  genblk1_u_muldiv/intadd_3/U2/CO (FA_X1)                 0.08       2.47 f
+  genblk1_u_muldiv/U983/ZN (OAI21_X1)                     0.04       2.51 r
+  genblk1_u_muldiv/U982/ZN (INV_X1)                       0.03       2.54 f
+  genblk1_u_muldiv/U987/ZN (OAI21_X1)                     0.04       2.58 r
+  genblk1_u_muldiv/intadd_2/U2/CO (FA_X1)                 0.07       2.65 r
+  genblk1_u_muldiv/U2479/ZN (OAI21_X1)                    0.04       2.69 f
+  genblk1_u_muldiv/U963/ZN (NAND2_X1)                     0.03       2.72 r
+  genblk1_u_muldiv/U961/ZN (NAND2_X1)                     0.04       2.76 f
+  genblk1_u_muldiv/U960/ZN (NAND2_X1)                     0.04       2.79 r
+  genblk1_u_muldiv/U1110/ZN (NAND2_X1)                    0.03       2.82 f
+  genblk1_u_muldiv/U1109/ZN (NAND2_X1)                    0.03       2.85 r
+  genblk1_u_muldiv/U372/ZN (NAND3_X1)                     0.04       2.89 f
+  genblk1_u_muldiv/U1239/ZN (NAND2_X1)                    0.03       2.92 r
+  genblk1_u_muldiv/U1240/ZN (NAND3_X1)                    0.04       2.96 f
+  genblk1_u_muldiv/U1009/ZN (NAND2_X1)                    0.03       3.00 r
+  genblk1_u_muldiv/U1007/ZN (NAND2_X1)                    0.03       3.03 f
+  genblk1_u_muldiv/U1006/ZN (NAND2_X1)                    0.03       3.05 r
+  genblk1_u_muldiv/U1048/ZN (NAND2_X1)                    0.03       3.08 f
+  genblk1_u_muldiv/U1047/ZN (NAND2_X1)                    0.03       3.11 r
+  genblk1_u_muldiv/U1062/ZN (NAND2_X1)                    0.03       3.14 f
+  genblk1_u_muldiv/U1061/ZN (NAND2_X1)                    0.03       3.17 r
+  genblk1_u_muldiv/U1068/ZN (NAND2_X1)                    0.03       3.20 f
+  genblk1_u_muldiv/U356/ZN (NAND2_X1)                     0.03       3.23 r
+  genblk1_u_muldiv/U357/ZN (AND2_X1)                      0.04       3.27 r
+  genblk1_u_muldiv/U1237/ZN (NAND2_X1)                    0.03       3.30 f
+  genblk1_u_muldiv/U335/ZN (OAI21_X1)                     0.03       3.33 r
+  genblk1_u_muldiv/U336/ZN (OAI21_X1)                     0.04       3.37 f
+  genblk1_u_muldiv/U996/ZN (NAND2_X1)                     0.03       3.40 r
+  genblk1_u_muldiv/U1002/ZN (NAND2_X1)                    0.04       3.44 f
+  genblk1_u_muldiv/U1001/ZN (XNOR2_X1)                    0.07       3.51 f
+  genblk1_u_muldiv/U1198/ZN (NAND2_X1)                    0.03       3.54 r
+  genblk1_u_muldiv/U1197/ZN (OAI21_X1)                    0.03       3.57 f
+  genblk1_u_muldiv/U2464/ZN (OAI21_X1)                    0.03       3.60 r
+  genblk1_u_muldiv/result_q_reg_30_/D (DFF_X1)            0.01       3.61 r
+  data arrival time                                                  3.61
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/result_q_reg_30_/CK (DFF_X1)           0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: mem_i_inst_i[17]
+              (input port clocked by clk_i)
+  Endpoint: pc_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_i (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.08       0.08 r
+  mem_i_inst_i[17] (in)                    0.00       0.08 r
+  U8361/ZN (INV_X1)                        0.04       0.12 f
+  U8353/ZN (NOR2_X1)                       0.09       0.21 r
+  U8170/Z (BUF_X1)                         0.15       0.36 r
+  U6939/ZN (AOI22_X1)                      0.08       0.44 f
+  U6952/ZN (NAND4_X1)                      0.04       0.48 r
+  U8727/ZN (AOI22_X1)                      0.03       0.51 f
+  U8728/ZN (NAND2_X1)                      0.07       0.58 r
+  U8890/ZN (INV_X1)                        0.05       0.63 f
+  U8891/ZN (AOI22_X1)                      0.05       0.68 r
+  U8892/ZN (OAI21_X1)                      0.04       0.72 f
+  U8893/ZN (AOI21_X1)                      0.07       0.79 r
+  U8900/ZN (NAND4_X1)                      0.05       0.84 f
+  U8901/ZN (NOR4_X1)                       0.08       0.92 r
+  U8902/ZN (NAND4_X1)                      0.06       0.99 f
+  U8935/ZN (NAND2_X1)                      0.04       1.03 r
+  U8936/ZN (OAI211_X1)                     0.04       1.07 f
+  U8957/ZN (OAI211_X1)                     0.04       1.11 r
+  U8958/ZN (NOR2_X1)                       0.04       1.15 f
+  U8959/ZN (INV_X1)                        0.04       1.19 r
+  U8391/ZN (OAI21_X1)                      0.04       1.23 f
+  U8390/ZN (OAI21_X1)                      0.04       1.27 r
+  U8388/ZN (NAND2_X1)                      0.03       1.30 f
+  DP_OP_181J1_124_5161_U31/CO (FA_X1)      0.08       1.38 f
+  DP_OP_181J1_124_5161_U30/CO (FA_X1)      0.08       1.47 f
+  DP_OP_181J1_124_5161_U29/CO (FA_X1)      0.08       1.55 f
+  DP_OP_181J1_124_5161_U28/CO (FA_X1)      0.08       1.63 f
+  DP_OP_181J1_124_5161_U27/CO (FA_X1)      0.08       1.71 f
+  DP_OP_181J1_124_5161_U26/CO (FA_X1)      0.08       1.79 f
+  U8249/ZN (AOI21_X1)                      0.05       1.84 r
+  U8379/ZN (OAI21_X1)                      0.04       1.88 f
+  DP_OP_181J1_124_5161_U23/CO (FA_X1)      0.08       1.96 f
+  DP_OP_181J1_124_5161_U22/CO (FA_X1)      0.08       2.05 f
+  U8377/ZN (AOI22_X1)                      0.04       2.09 r
+  U8376/ZN (INV_X1)                        0.03       2.11 f
+  DP_OP_181J1_124_5161_U20/CO (FA_X1)      0.08       2.19 f
+  DP_OP_181J1_124_5161_U19/CO (FA_X1)      0.08       2.27 f
+  DP_OP_181J1_124_5161_U18/CO (FA_X1)      0.08       2.36 f
+  DP_OP_181J1_124_5161_U17/CO (FA_X1)      0.08       2.44 f
+  DP_OP_181J1_124_5161_U16/CO (FA_X1)      0.08       2.52 f
+  DP_OP_181J1_124_5161_U15/CO (FA_X1)      0.08       2.60 f
+  DP_OP_181J1_124_5161_U14/CO (FA_X1)      0.08       2.68 f
+  DP_OP_181J1_124_5161_U13/CO (FA_X1)      0.08       2.76 f
+  DP_OP_181J1_124_5161_U12/CO (FA_X1)      0.08       2.85 f
+  U8244/ZN (AOI21_X1)                      0.05       2.90 r
+  U8242/ZN (OAI21_X1)                      0.04       2.93 f
+  DP_OP_181J1_124_5161_U9/CO (FA_X1)       0.08       3.01 f
+  DP_OP_181J1_124_5161_U8/CO (FA_X1)       0.08       3.10 f
+  DP_OP_181J1_124_5161_U7/CO (FA_X1)       0.08       3.18 f
+  DP_OP_181J1_124_5161_U6/CO (FA_X1)       0.08       3.26 f
+  DP_OP_181J1_124_5161_U5/CO (FA_X1)       0.08       3.34 f
+  DP_OP_181J1_124_5161_U4/CO (FA_X1)       0.08       3.42 f
+  DP_OP_181J1_124_5161_U3/CO (FA_X1)       0.08       3.50 f
+  U8240/ZN (XNOR2_X1)                      0.05       3.55 f
+  U11316/ZN (OAI211_X1)                    0.03       3.59 r
+  pc_q_reg_31_/D (DFF_X1)                  0.01       3.60 r
+  data arrival time                                   3.60
+
+  clock clk_i (rise edge)                  4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.35       3.65
+  pc_q_reg_31_/CK (DFF_X1)                 0.00       3.65 r
+  library setup time                      -0.04       3.61
+  data required time                                  3.61
+  -----------------------------------------------------------
+  data required time                                  3.61
+  data arrival time                                  -3.60
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: mem_i_inst_i[15]
+              (input port clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/dividend_q_reg_30_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.08       0.08 r
+  mem_i_inst_i[15] (in)                                   0.00       0.08 r
+  U8362/ZN (INV_X1)                                       0.04       0.12 f
+  U6511/ZN (NOR3_X1)                                      0.13       0.25 r
+  U8349/Z (BUF_X1)                                        0.10       0.35 r
+  U6529/ZN (AOI22_X1)                                     0.05       0.40 f
+  U6535/ZN (NAND4_X1)                                     0.04       0.44 r
+  U8774/ZN (AOI22_X1)                                     0.03       0.47 f
+  U8301/ZN (NAND2_X1)                                     0.05       0.52 r
+  U8299/ZN (INV_X1)                                       0.05       0.57 f
+  U8297/ZN (NOR2_X1)                                      0.06       0.63 r
+  U8153/ZN (AOI21_X1)                                     0.05       0.68 f
+  U8393/ZN (NOR2_X1)                                      0.05       0.73 r
+  U8291/ZN (AOI211_X1)                                    0.04       0.78 f
+  u_csr/excpn_lsu_align_i (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.78 f
+  u_csr/U73/ZN (OAI21_X1)                                 0.07       0.84 r
+  u_csr/exception_o_BAR (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.84 r
+  U8290/ZN (INV_X1)                                       0.04       0.88 f
+  U8284/ZN (NOR2_X1)                                      0.05       0.93 r
+  genblk1_u_muldiv/valid_i (uriscv_muldiv)                0.00       0.93 r
+  genblk1_u_muldiv/U742/ZN (NAND2_X1)                     0.05       0.98 f
+  genblk1_u_muldiv/U734/ZN (NOR2_X1)                      0.05       1.03 r
+  genblk1_u_muldiv/U2841/ZN (NAND3_X1)                    0.05       1.08 f
+  genblk1_u_muldiv/U721/ZN (INV_X1)                       0.04       1.12 r
+  genblk1_u_muldiv/U707/Z (BUF_X1)                        0.08       1.20 r
+  genblk1_u_muldiv/U3908/ZN (AOI22_X1)                    0.07       1.26 f
+  genblk1_u_muldiv/U1056/ZN (OAI21_X1)                    0.04       1.31 r
+  genblk1_u_muldiv/U1054/ZN (NAND2_X1)                    0.03       1.34 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U30/CO (FA_X1)      0.08       1.42 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U29/CO (FA_X1)      0.08       1.50 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U28/CO (FA_X1)      0.08       1.58 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U27/CO (FA_X1)      0.08       1.66 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U26/CO (FA_X1)      0.08       1.74 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U25/CO (FA_X1)      0.08       1.83 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U24/CO (FA_X1)      0.08       1.91 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U23/CO (FA_X1)      0.08       1.99 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U22/CO (FA_X1)      0.08       2.07 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U21/CO (FA_X1)      0.08       2.15 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U20/CO (FA_X1)      0.08       2.23 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U19/CO (FA_X1)      0.08       2.32 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U18/CO (FA_X1)      0.08       2.40 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U17/CO (FA_X1)      0.08       2.48 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U16/CO (FA_X1)      0.08       2.56 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U15/CO (FA_X1)      0.08       2.64 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U14/CO (FA_X1)      0.08       2.72 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U13/CO (FA_X1)      0.08       2.80 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U12/CO (FA_X1)      0.08       2.89 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U11/CO (FA_X1)      0.08       2.97 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U10/CO (FA_X1)      0.08       3.05 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U9/CO (FA_X1)       0.08       3.13 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U8/CO (FA_X1)       0.08       3.21 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U7/CO (FA_X1)       0.08       3.30 f
+  genblk1_u_muldiv/U537/ZN (AOI21_X1)                     0.05       3.34 r
+  genblk1_u_muldiv/U530/ZN (OAI21_X1)                     0.04       3.38 f
+  genblk1_u_muldiv/U959/ZN (INV_X1)                       0.03       3.41 r
+  genblk1_u_muldiv/U956/ZN (OAI21_X1)                     0.03       3.44 f
+  genblk1_u_muldiv/U520/ZN (XNOR2_X1)                     0.06       3.50 f
+  genblk1_u_muldiv/U3946/ZN (AOI22_X1)                    0.04       3.55 r
+  genblk1_u_muldiv/U1446/ZN (OAI21_X1)                    0.03       3.58 f
+  genblk1_u_muldiv/dividend_q_reg_30_/D (DFF_X1)          0.01       3.59 f
+  data arrival time                                                  3.59
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/dividend_q_reg_30_/CK (DFF_X1)         0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: mem_i_inst_i[15]
+              (input port clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/dividend_q_reg_28_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.08       0.08 r
+  mem_i_inst_i[15] (in)                                   0.00       0.08 r
+  U8362/ZN (INV_X1)                                       0.04       0.12 f
+  U6511/ZN (NOR3_X1)                                      0.13       0.25 r
+  U8349/Z (BUF_X1)                                        0.10       0.35 r
+  U6529/ZN (AOI22_X1)                                     0.05       0.40 f
+  U6535/ZN (NAND4_X1)                                     0.04       0.44 r
+  U8774/ZN (AOI22_X1)                                     0.03       0.47 f
+  U8301/ZN (NAND2_X1)                                     0.05       0.52 r
+  U8299/ZN (INV_X1)                                       0.05       0.57 f
+  U8297/ZN (NOR2_X1)                                      0.06       0.63 r
+  U8153/ZN (AOI21_X1)                                     0.05       0.68 f
+  U8393/ZN (NOR2_X1)                                      0.05       0.73 r
+  U8291/ZN (AOI211_X1)                                    0.04       0.78 f
+  u_csr/excpn_lsu_align_i (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.78 f
+  u_csr/U73/ZN (OAI21_X1)                                 0.07       0.84 r
+  u_csr/exception_o_BAR (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.84 r
+  U8290/ZN (INV_X1)                                       0.04       0.88 f
+  U8284/ZN (NOR2_X1)                                      0.05       0.93 r
+  genblk1_u_muldiv/valid_i (uriscv_muldiv)                0.00       0.93 r
+  genblk1_u_muldiv/U742/ZN (NAND2_X1)                     0.05       0.98 f
+  genblk1_u_muldiv/U734/ZN (NOR2_X1)                      0.05       1.03 r
+  genblk1_u_muldiv/U2841/ZN (NAND3_X1)                    0.05       1.08 f
+  genblk1_u_muldiv/U721/ZN (INV_X1)                       0.04       1.12 r
+  genblk1_u_muldiv/U707/Z (BUF_X1)                        0.08       1.20 r
+  genblk1_u_muldiv/U3908/ZN (AOI22_X1)                    0.07       1.26 f
+  genblk1_u_muldiv/U1056/ZN (OAI21_X1)                    0.04       1.31 r
+  genblk1_u_muldiv/U1054/ZN (NAND2_X1)                    0.03       1.34 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U30/CO (FA_X1)      0.08       1.42 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U29/CO (FA_X1)      0.08       1.50 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U28/CO (FA_X1)      0.08       1.58 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U27/CO (FA_X1)      0.08       1.66 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U26/CO (FA_X1)      0.08       1.74 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U25/CO (FA_X1)      0.08       1.83 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U24/CO (FA_X1)      0.08       1.91 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U23/CO (FA_X1)      0.08       1.99 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U22/CO (FA_X1)      0.08       2.07 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U21/CO (FA_X1)      0.08       2.15 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U20/CO (FA_X1)      0.08       2.23 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U19/CO (FA_X1)      0.08       2.32 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U18/CO (FA_X1)      0.08       2.40 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U17/CO (FA_X1)      0.08       2.48 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U16/CO (FA_X1)      0.08       2.56 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U15/CO (FA_X1)      0.08       2.64 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U14/CO (FA_X1)      0.08       2.72 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U13/CO (FA_X1)      0.08       2.80 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U12/CO (FA_X1)      0.08       2.89 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U11/CO (FA_X1)      0.08       2.97 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U10/CO (FA_X1)      0.08       3.05 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U9/CO (FA_X1)       0.08       3.13 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U8/CO (FA_X1)       0.08       3.21 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U7/CO (FA_X1)       0.08       3.30 f
+  genblk1_u_muldiv/U537/ZN (AOI21_X1)                     0.05       3.34 r
+  genblk1_u_muldiv/U352/Z (XOR2_X1)                       0.07       3.41 r
+  genblk1_u_muldiv/U353/ZN (XNOR2_X1)                     0.06       3.47 r
+  genblk1_u_muldiv/U354/ZN (AOI22_X1)                     0.04       3.51 f
+  genblk1_u_muldiv/U355/ZN (OAI21_X1)                     0.03       3.54 r
+  genblk1_u_muldiv/dividend_q_reg_28_/D (DFF_X1)          0.01       3.55 r
+  data arrival time                                                  3.55
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/dividend_q_reg_28_/CK (DFF_X1)         0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: mem_i_inst_i[17]
+              (input port clocked by clk_i)
+  Endpoint: pc_q_reg_29_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_i (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.08       0.08 r
+  mem_i_inst_i[17] (in)                    0.00       0.08 r
+  U8361/ZN (INV_X1)                        0.04       0.12 f
+  U8353/ZN (NOR2_X1)                       0.09       0.21 r
+  U8170/Z (BUF_X1)                         0.15       0.36 r
+  U6939/ZN (AOI22_X1)                      0.08       0.44 f
+  U6952/ZN (NAND4_X1)                      0.04       0.48 r
+  U8727/ZN (AOI22_X1)                      0.03       0.51 f
+  U8728/ZN (NAND2_X1)                      0.07       0.58 r
+  U8890/ZN (INV_X1)                        0.05       0.63 f
+  U8891/ZN (AOI22_X1)                      0.05       0.68 r
+  U8892/ZN (OAI21_X1)                      0.04       0.72 f
+  U8893/ZN (AOI21_X1)                      0.07       0.79 r
+  U8900/ZN (NAND4_X1)                      0.05       0.84 f
+  U8901/ZN (NOR4_X1)                       0.08       0.92 r
+  U8902/ZN (NAND4_X1)                      0.06       0.99 f
+  U8935/ZN (NAND2_X1)                      0.04       1.03 r
+  U8936/ZN (OAI211_X1)                     0.04       1.07 f
+  U8957/ZN (OAI211_X1)                     0.04       1.11 r
+  U8958/ZN (NOR2_X1)                       0.04       1.15 f
+  U8959/ZN (INV_X1)                        0.04       1.19 r
+  U8391/ZN (OAI21_X1)                      0.04       1.23 f
+  U8390/ZN (OAI21_X1)                      0.04       1.27 r
+  U8388/ZN (NAND2_X1)                      0.03       1.30 f
+  DP_OP_181J1_124_5161_U31/CO (FA_X1)      0.08       1.38 f
+  DP_OP_181J1_124_5161_U30/CO (FA_X1)      0.08       1.47 f
+  DP_OP_181J1_124_5161_U29/CO (FA_X1)      0.08       1.55 f
+  DP_OP_181J1_124_5161_U28/CO (FA_X1)      0.08       1.63 f
+  DP_OP_181J1_124_5161_U27/CO (FA_X1)      0.08       1.71 f
+  DP_OP_181J1_124_5161_U26/CO (FA_X1)      0.08       1.79 f
+  U8249/ZN (AOI21_X1)                      0.05       1.84 r
+  U8379/ZN (OAI21_X1)                      0.04       1.88 f
+  DP_OP_181J1_124_5161_U23/CO (FA_X1)      0.08       1.96 f
+  DP_OP_181J1_124_5161_U22/CO (FA_X1)      0.08       2.05 f
+  U8377/ZN (AOI22_X1)                      0.04       2.09 r
+  U8376/ZN (INV_X1)                        0.03       2.11 f
+  DP_OP_181J1_124_5161_U20/CO (FA_X1)      0.08       2.19 f
+  DP_OP_181J1_124_5161_U19/CO (FA_X1)      0.08       2.27 f
+  DP_OP_181J1_124_5161_U18/CO (FA_X1)      0.08       2.36 f
+  DP_OP_181J1_124_5161_U17/CO (FA_X1)      0.08       2.44 f
+  DP_OP_181J1_124_5161_U16/CO (FA_X1)      0.08       2.52 f
+  DP_OP_181J1_124_5161_U15/CO (FA_X1)      0.08       2.60 f
+  DP_OP_181J1_124_5161_U14/CO (FA_X1)      0.08       2.68 f
+  DP_OP_181J1_124_5161_U13/CO (FA_X1)      0.08       2.76 f
+  DP_OP_181J1_124_5161_U12/CO (FA_X1)      0.08       2.85 f
+  U8244/ZN (AOI21_X1)                      0.05       2.90 r
+  U8242/ZN (OAI21_X1)                      0.04       2.93 f
+  DP_OP_181J1_124_5161_U9/CO (FA_X1)       0.08       3.01 f
+  DP_OP_181J1_124_5161_U8/CO (FA_X1)       0.08       3.10 f
+  DP_OP_181J1_124_5161_U7/CO (FA_X1)       0.08       3.18 f
+  DP_OP_181J1_124_5161_U6/CO (FA_X1)       0.08       3.26 f
+  DP_OP_181J1_124_5161_U5/CO (FA_X1)       0.08       3.34 f
+  DP_OP_181J1_124_5161_U4/S (FA_X1)        0.11       3.45 r
+  U11326/ZN (AOI22_X1)                     0.03       3.49 f
+  U11327/ZN (OAI211_X1)                    0.04       3.52 r
+  pc_q_reg_29_/D (DFF_X1)                  0.01       3.53 r
+  data arrival time                                   3.53
+
+  clock clk_i (rise edge)                  4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.35       3.65
+  pc_q_reg_29_/CK (DFF_X1)                 0.00       3.65 r
+  library setup time                      -0.03       3.62
+  data required time                                  3.62
+  -----------------------------------------------------------
+  data required time                                  3.62
+  data arrival time                                  -3.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: mem_i_inst_i[15]
+              (input port clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/dividend_q_reg_29_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.08       0.08 r
+  mem_i_inst_i[15] (in)                                   0.00       0.08 r
+  U8362/ZN (INV_X1)                                       0.04       0.12 f
+  U6511/ZN (NOR3_X1)                                      0.13       0.25 r
+  U8349/Z (BUF_X1)                                        0.10       0.35 r
+  U6529/ZN (AOI22_X1)                                     0.05       0.40 f
+  U6535/ZN (NAND4_X1)                                     0.04       0.44 r
+  U8774/ZN (AOI22_X1)                                     0.03       0.47 f
+  U8301/ZN (NAND2_X1)                                     0.05       0.52 r
+  U8299/ZN (INV_X1)                                       0.05       0.57 f
+  U8297/ZN (NOR2_X1)                                      0.06       0.63 r
+  U8153/ZN (AOI21_X1)                                     0.05       0.68 f
+  U8393/ZN (NOR2_X1)                                      0.05       0.73 r
+  U8291/ZN (AOI211_X1)                                    0.04       0.78 f
+  u_csr/excpn_lsu_align_i (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.78 f
+  u_csr/U73/ZN (OAI21_X1)                                 0.07       0.84 r
+  u_csr/exception_o_BAR (uriscv_csr_SUPPORT_CSR1_SUPPORT_MCYCLE1_SUPPORT_MTIMECMP0_SUPPORT_MSCRATCH0_SUPPORT_MIP_MIE0_SUPPORT_MTVEC0_SUPPORT_MTVAL0_SUPPORT_MULDIV1)
+                                                          0.00       0.84 r
+  U8290/ZN (INV_X1)                                       0.04       0.88 f
+  U8284/ZN (NOR2_X1)                                      0.05       0.93 r
+  genblk1_u_muldiv/valid_i (uriscv_muldiv)                0.00       0.93 r
+  genblk1_u_muldiv/U742/ZN (NAND2_X1)                     0.05       0.98 f
+  genblk1_u_muldiv/U734/ZN (NOR2_X1)                      0.05       1.03 r
+  genblk1_u_muldiv/U2841/ZN (NAND3_X1)                    0.05       1.08 f
+  genblk1_u_muldiv/U721/ZN (INV_X1)                       0.04       1.12 r
+  genblk1_u_muldiv/U707/Z (BUF_X1)                        0.08       1.20 r
+  genblk1_u_muldiv/U3908/ZN (AOI22_X1)                    0.07       1.26 f
+  genblk1_u_muldiv/U1056/ZN (OAI21_X1)                    0.04       1.31 r
+  genblk1_u_muldiv/U1054/ZN (NAND2_X1)                    0.03       1.34 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U30/CO (FA_X1)      0.08       1.42 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U29/CO (FA_X1)      0.08       1.50 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U28/CO (FA_X1)      0.08       1.58 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U27/CO (FA_X1)      0.08       1.66 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U26/CO (FA_X1)      0.08       1.74 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U25/CO (FA_X1)      0.08       1.83 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U24/CO (FA_X1)      0.08       1.91 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U23/CO (FA_X1)      0.08       1.99 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U22/CO (FA_X1)      0.08       2.07 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U21/CO (FA_X1)      0.08       2.15 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U20/CO (FA_X1)      0.08       2.23 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U19/CO (FA_X1)      0.08       2.32 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U18/CO (FA_X1)      0.08       2.40 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U17/CO (FA_X1)      0.08       2.48 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U16/CO (FA_X1)      0.08       2.56 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U15/CO (FA_X1)      0.08       2.64 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U14/CO (FA_X1)      0.08       2.72 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U13/CO (FA_X1)      0.08       2.80 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U12/CO (FA_X1)      0.08       2.89 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U11/CO (FA_X1)      0.08       2.97 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U10/CO (FA_X1)      0.08       3.05 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U9/CO (FA_X1)       0.08       3.13 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U8/CO (FA_X1)       0.08       3.21 f
+  genblk1_u_muldiv/DP_OP_56J3_124_887_U7/CO (FA_X1)       0.08       3.30 f
+  genblk1_u_muldiv/U537/ZN (AOI21_X1)                     0.05       3.34 r
+  genblk1_u_muldiv/U530/ZN (OAI21_X1)                     0.04       3.38 f
+  genblk1_u_muldiv/U523/ZN (XNOR2_X1)                     0.06       3.44 f
+  genblk1_u_muldiv/U3947/ZN (AOI22_X1)                    0.04       3.49 r
+  genblk1_u_muldiv/U1445/ZN (OAI21_X1)                    0.03       3.52 f
+  genblk1_u_muldiv/dividend_q_reg_29_/D (DFF_X1)          0.01       3.53 f
+  data arrival time                                                  3.53
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/dividend_q_reg_29_/CK (DFF_X1)         0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.08
+
+
+  Startpoint: genblk1_u_muldiv/mul_operand_a_q_reg_14_
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: genblk1_u_muldiv/result_q_reg_29_
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  genblk1_u_muldiv/mul_operand_a_q_reg_14_/Q (DFF_X1)     0.09       0.09 f
+  genblk1_u_muldiv/U3041/ZN (AOI22_X1)                    0.07       0.17 r
+  genblk1_u_muldiv/U494/ZN (AND2_X2)                      0.09       0.26 r
+  genblk1_u_muldiv/U848/ZN (INV_X1)                       0.09       0.35 f
+  genblk1_u_muldiv/U828/ZN (OR2_X1)                       0.07       0.43 f
+  genblk1_u_muldiv/U916/ZN (NAND3_X1)                     0.03       0.46 r
+  genblk1_u_muldiv/U1942/ZN (NAND2_X1)                    0.04       0.50 f
+  genblk1_u_muldiv/U786/ZN (NAND2_X1)                     0.04       0.54 r
+  genblk1_u_muldiv/U778/ZN (NOR2_X1)                      0.03       0.57 f
+  genblk1_u_muldiv/U230/ZN (AOI21_X1)                     0.04       0.61 r
+  genblk1_u_muldiv/U232/ZN (AOI21_X1)                     0.04       0.65 f
+  genblk1_u_muldiv/U1066/ZN (NAND2_X1)                    0.03       0.68 r
+  genblk1_u_muldiv/U1065/ZN (NAND2_X1)                    0.03       0.71 f
+  genblk1_u_muldiv/U1064/ZN (INV_X1)                      0.03       0.74 r
+  genblk1_u_muldiv/U909/ZN (OAI21_X1)                     0.03       0.77 f
+  genblk1_u_muldiv/U906/ZN (INV_X1)                       0.03       0.80 r
+  genblk1_u_muldiv/U725/ZN (OAI21_X1)                     0.03       0.83 f
+  genblk1_u_muldiv/U889/ZN (INV_X1)                       0.03       0.86 r
+  genblk1_u_muldiv/U886/ZN (OAI21_X1)                     0.03       0.88 f
+  genblk1_u_muldiv/intadd_6/U15/CO (FA_X1)                0.08       0.96 f
+  genblk1_u_muldiv/intadd_6/U14/CO (FA_X1)                0.08       1.05 f
+  genblk1_u_muldiv/intadd_6/U13/CO (FA_X1)                0.08       1.13 f
+  genblk1_u_muldiv/intadd_6/U12/CO (FA_X1)                0.08       1.21 f
+  genblk1_u_muldiv/intadd_6/U11/CO (FA_X1)                0.08       1.29 f
+  genblk1_u_muldiv/intadd_6/U10/CO (FA_X1)                0.08       1.37 f
+  genblk1_u_muldiv/intadd_6/U9/CO (FA_X1)                 0.08       1.45 f
+  genblk1_u_muldiv/intadd_6/U8/CO (FA_X1)                 0.08       1.54 f
+  genblk1_u_muldiv/U296/Z (XOR2_X1)                       0.07       1.60 f
+  genblk1_u_muldiv/U297/ZN (XNOR2_X1)                     0.06       1.66 r
+  genblk1_u_muldiv/U1153/ZN (XNOR2_X1)                    0.06       1.73 r
+  genblk1_u_muldiv/U1122/ZN (XNOR2_X1)                    0.06       1.79 r
+  genblk1_u_muldiv/U598/ZN (OR2_X1)                       0.05       1.84 r
+  genblk1_u_muldiv/U969/ZN (NOR2_X1)                      0.03       1.86 f
+  genblk1_u_muldiv/U970/ZN (AOI21_X1)                     0.04       1.90 r
+  genblk1_u_muldiv/U1168/ZN (INV_X1)                      0.03       1.93 f
+  genblk1_u_muldiv/U1166/ZN (AOI22_X1)                    0.05       1.98 r
+  genblk1_u_muldiv/U1165/ZN (NAND2_X1)                    0.03       2.01 f
+  genblk1_u_muldiv/intadd_2/U7/S (FA_X1)                  0.12       2.13 r
+  genblk1_u_muldiv/U2739/ZN (INV_X1)                      0.03       2.15 f
+  genblk1_u_muldiv/U1188/ZN (NOR2_X1)                     0.03       2.19 r
+  genblk1_u_muldiv/U1186/ZN (OAI21_X1)                    0.03       2.22 f
+  genblk1_u_muldiv/intadd_3/U3/S (FA_X1)                  0.10       2.32 f
+  genblk1_u_muldiv/U2455/ZN (NOR2_X1)                     0.04       2.36 r
+  genblk1_u_muldiv/U2456/ZN (OAI21_X1)                    0.03       2.39 f
+  genblk1_u_muldiv/intadd_3/U2/CO (FA_X1)                 0.08       2.47 f
+  genblk1_u_muldiv/U983/ZN (OAI21_X1)                     0.04       2.51 r
+  genblk1_u_muldiv/U982/ZN (INV_X1)                       0.03       2.54 f
+  genblk1_u_muldiv/U987/ZN (OAI21_X1)                     0.04       2.58 r
+  genblk1_u_muldiv/intadd_2/U2/CO (FA_X1)                 0.07       2.65 r
+  genblk1_u_muldiv/U2479/ZN (OAI21_X1)                    0.04       2.69 f
+  genblk1_u_muldiv/U963/ZN (NAND2_X1)                     0.03       2.72 r
+  genblk1_u_muldiv/U961/ZN (NAND2_X1)                     0.04       2.76 f
+  genblk1_u_muldiv/U960/ZN (NAND2_X1)                     0.04       2.79 r
+  genblk1_u_muldiv/U1110/ZN (NAND2_X1)                    0.03       2.82 f
+  genblk1_u_muldiv/U1109/ZN (NAND2_X1)                    0.03       2.85 r
+  genblk1_u_muldiv/U372/ZN (NAND3_X1)                     0.04       2.89 f
+  genblk1_u_muldiv/U1239/ZN (NAND2_X1)                    0.03       2.92 r
+  genblk1_u_muldiv/U1240/ZN (NAND3_X1)                    0.04       2.96 f
+  genblk1_u_muldiv/U1009/ZN (NAND2_X1)                    0.03       3.00 r
+  genblk1_u_muldiv/U1007/ZN (NAND2_X1)                    0.03       3.03 f
+  genblk1_u_muldiv/U1006/ZN (NAND2_X1)                    0.03       3.05 r
+  genblk1_u_muldiv/U1048/ZN (NAND2_X1)                    0.03       3.08 f
+  genblk1_u_muldiv/U1047/ZN (NAND2_X1)                    0.03       3.11 r
+  genblk1_u_muldiv/U1062/ZN (NAND2_X1)                    0.03       3.14 f
+  genblk1_u_muldiv/U1061/ZN (NAND2_X1)                    0.03       3.17 r
+  genblk1_u_muldiv/U1068/ZN (NAND2_X1)                    0.03       3.20 f
+  genblk1_u_muldiv/U356/ZN (NAND2_X1)                     0.03       3.23 r
+  genblk1_u_muldiv/U357/ZN (AND2_X1)                      0.04       3.27 r
+  genblk1_u_muldiv/U1237/ZN (NAND2_X1)                    0.03       3.30 f
+  genblk1_u_muldiv/U335/ZN (OAI21_X1)                     0.03       3.33 r
+  genblk1_u_muldiv/U336/ZN (OAI21_X1)                     0.04       3.37 f
+  genblk1_u_muldiv/U505/ZN (XNOR2_X1)                     0.06       3.43 f
+  genblk1_u_muldiv/U1473/ZN (OAI21_X1)                    0.03       3.46 r
+  genblk1_u_muldiv/result_q_reg_29_/D (DFF_X1)            0.01       3.47 r
+  data arrival time                                                  3.47
+
+  clock clk_i (rise edge)                                 4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.35       3.65
+  genblk1_u_muldiv/result_q_reg_29_/CK (DFF_X1)           0.00       3.65 r
+  library setup time                                     -0.04       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+1
